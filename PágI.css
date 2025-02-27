@@ -1,16 +1,64 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-header
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
 .TituloP{
- 
+    
+
         font-family: "Great Vibes", serif;
         font-weight: 400;
         font-style: normal;
-      
+      font-size: 5em;
       
   
-color: brown;
+color: rgb(49, 80, 32)
 }
-main{
-    background-color: honeydew;
+header{
+    
+ border-top-right-radius: 33%;
+ border-radius: 2%;
+    box-shadow: 2em;
+    width: 90%;
+    padding: 1%;
+    height: 10em;
+    margin: auto;
+    background-color:white;
+    box-shadow: gray 5px 5px 5px 5px;
+}
+
+section{
+    background-color: rgba(0,0,0,0);
+ width: 90%;
+ /* height: 20em; */
+padding: auto;
+margin: 5em;
+}
+
+body{
+    background-color: burlywood;
+}
+
+#imagem{
+    width: 20%;
+}
+
+.livro{
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    height: 35vh;
+    padding: 1vh;
+    border: 5px solid black;
+    margin-bottom: 1em;
+    background-color: azure;
 }
