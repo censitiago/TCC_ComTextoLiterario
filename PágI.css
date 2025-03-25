@@ -12,6 +12,15 @@
    
 }
 
+#imgComTexto{
+display: flex;
+justify-content: baseline;
+height: 20vh;
+align-items: baseline;
+
+}
+
+
 .TituloP{
     
 
