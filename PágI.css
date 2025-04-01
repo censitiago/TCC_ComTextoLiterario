@@ -1,71 +1,84 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+.toggle-menu{ /*botao menu*/
+    width: 10em;
+    margin-right: 1em;
+}
 
-#cabecalho{
+#cabecalho {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-}
-
-#imgComTexto{
-display: flex;
-justify-content: baseline;
-height: 20vh;
-align-items: baseline;
 
 }
 
+#imgComTexto {
+    margin-right: auto;
+    height: 200px;
 
-.TituloP{
-    
-
-        font-family: "Great Vibes", serif;
-        font-weight: 400;
-        font-style: normal;
-      font-size: 5em;
-      
-  
-color: rgb(49, 80, 32)
 }
-header{
-    
- border-top-right-radius: 33%;
- border-radius: 2%;
+
+
+.TituloP {
+    margin-right: 0.2em;
+    display: flex;
+    align-items: center;
+   position: absolute;
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+    color: rgb(49, 80, 32)
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 33%;
+    border-radius: 2%;
     box-shadow: 2em;
     width: 90%;
     padding: 1%;
     height: 10em;
     margin: auto;
-    background-color:white;
+    background-color: white;
     box-shadow: gray 5px 5px 5px 5px;
+    overflow: hidden;
 }
 
-section{
-    background-color: rgba(0,0,0,0);
- width: 90%;
- /* height: 20em; */
-padding: auto;
-margin: 5em;
+section {
+    background-color: rgba(0, 0, 0, 0);
+    width: 90%; /* height: 20em; */
+    padding: auto;
+    margin: 5em;
 }
 
-body{
+body {
     background-color: burlywood;
 }
 
-#imagem{
-    width: 20%;
+.textocaixa {
+
+    margin-left: 1em;
 }
 
-.livro{
+#imagem {
+    /* Imagem livro */
+    margin-left: 1em;
+    /*margem caixa*/
+    width: 150%;
+}
+
+.livro {
     font-size: x-large;
     display: flex;
     align-items: center;
-    height: 35vh;
+    height: 60vh;
+    /*aumenta tamanho caixa*/
     padding: 1vh;
     border: 5px solid black;
     margin-bottom: 1em;
