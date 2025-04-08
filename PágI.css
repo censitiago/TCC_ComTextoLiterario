@@ -4,15 +4,43 @@
     margin: 0;
     padding: 0;
 }
-.toggle-menu{ /*botao menu*/
+.menu{ 
+    display: none;
     width: 10em;
     margin-right: 1em;
+    position: absolute;
+    top: 10em; /* faz menu aparecer abaixo do cabeçalho*/
+    right: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+
+a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+}
+.menu-toggle{/*botao menu*/
+  width: 5em ;
+  height: 5em;
+    margin-right: 5em;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    border: 0cap;
+    background-color: white;
+  
 }
 
 #cabecalho {
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -32,7 +60,9 @@
     font-weight: 400;
     font-style: normal;
     font-size: 5em;
-    color: rgb(49, 80, 32)
+    color: rgb(49, 80, 32);
+    margin-left: 0.3em;
+    
 }
 
 header {
@@ -48,6 +78,7 @@ header {
     background-color: white;
     box-shadow: gray 5px 5px 5px 5px;
     overflow: hidden;
+    position: relative;
 }
 
 section {
