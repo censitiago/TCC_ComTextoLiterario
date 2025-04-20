@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding-top: 40px;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 /* Menu fixo no canto */
 .menu-container {
     position: fixed;
-    top: 10px;
+    top: 200px;
     left: 10px;
     z-index: 9999;
 }
@@ -50,20 +51,45 @@ body {
     margin-bottom: 5px;
 }
 
+
+
 /* CABEÇALHO */
 header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
+    top: 0px;
     padding: 20px;
-    margin: 5em auto 2em;
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
     background-color: white;
-    border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+#imgComTexto {
+    position: relative;
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+
+}
+
+/* Título */
+.TituloP {
+    position: absolute;
+    font-family: "Great Vibes", serif;
+   left: 50%;
+right: 50%;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 4em;
+    color: rgb(49, 80, 32);
+    white-space: nowrap;
 }
 
 /*RODAPé*/
@@ -80,28 +106,12 @@ footer {}
 #logo {
     /* logo do if no footer */
     position: relative;
-    top: 80px;
+    top: 140px;
     align-items: center;
     width: 70px;
     height: auto;
 
 
-}
-
-/* Logo */
-#imgComTexto {
-    height: 100px;
-    width: auto;
-    object-fit: contain;
-}
-
-/* Título */
-.TituloP {
-    font-family: "Great Vibes", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3em;
-    color: rgb(49, 80, 32);
 }
 
 /* LIVROS */
