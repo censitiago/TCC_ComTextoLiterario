@@ -15,7 +15,8 @@ body {
 /* Menu fixo no canto */
 .menu-container {
     position: fixed;
-    top: 200px;
+    top: 120px;
+    /*distancia do header*/
     left: 10px;
     z-index: 9999;
 }
@@ -58,6 +59,7 @@ header {
     position: fixed;
     display: flex;
     align-items: center;
+    text-align: center;
     gap: 20px;
     top: 0px;
     padding: 20px;
@@ -98,11 +100,44 @@ header {
     font-weight: none;
     position: relative;
     display: flex;
- align-items: center;
- justify-content: center;
+    align-items: center;
+    justify-content: center;
     left: -30%;
     top: 25%;
     white-space: nowrap;
+}
+
+.linhavertical{
+    position: fixed;
+    top: 20%;
+    bottom: 0;
+    left: 15%;
+    width: 5px;
+    transform: X(-50%);
+    background-color: black;
+    z-index: 1000;
+}
+
+#livrosemana {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+
+}
+
+#textolivro {
+    color: white;
+    margin-top: -2.2em; /*distancia do texto da parte de cima da box*/
+    text-align: center;
+}
+
+#fundo { 
+    border-radius: 15%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 151, 58);
+    width: 15em;
+    height: 5em;
 }
 
 /*RODAPé*/
@@ -115,8 +150,9 @@ header {
 
 }
 
-#logo {/* logo do if no footer */
-    
+#logo {
+    /* logo do if no footer */
+
     position: relative;
     top: 140px;
     align-items: center;
@@ -139,6 +175,7 @@ section {
 
 
 .livro {
+    /*Imagem dos livros */
     font-size: large;
     width: 90%;
     gap: 5em;
