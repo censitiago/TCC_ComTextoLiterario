@@ -8,24 +8,25 @@
 }
 
 body {
-    background-color: burlywood;
+    background-color: #deb887;
     font-family: sans-serif;
 }
 
 /* Menu fixo no canto */
 .menu-container {
     position: fixed;
-    top: 120px;
+    top: 20%;
     /*distancia do header*/
-    left: 10px;
+    width: 15%;
     z-index: 9999;
+    height: 100%;
+    background-color: #ffdeb2;
 }
 
 #menu-toggle {
     display: flex;
     font-size: 24px;
-    width: 4em;
-    height: 4em;
+margin-top: -4em;
     border: none;
     background: none;
     cursor: pointer;
@@ -36,7 +37,7 @@ body {
 .menu {
     display: none;
     position: absolute;
-    top: 60px;
+
     left: 0;
     background-color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -66,6 +67,7 @@ header {
     width: 100%;
     height: 20%;
     overflow: hidden;
+  
     background-color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -82,32 +84,34 @@ header {
 
 /* Título */
 .TituloP {
-    position: relative;
-    display: flex;
-    align-items: center;
-    top: -30%;
-    left: 15%;
     font-family: "Great Vibes", serif;
     font-weight: 400px;
     font-style: normal;
-    font-size: 3.4em;
+    font-size: 3.8em;
     color: rgb(49, 80, 32);
     white-space: nowrap;
 
+
+}
+
+.titulos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
 }
 
 #subtitulo {
-    font-weight: none;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: -30%;
-    top: 25%;
-    white-space: nowrap;
+    font-size: 1.5em;
+    color: grey;
+    top: -1.5em;
+
 }
 
-.linhavertical{
+.linhavertical {
     position: fixed;
     top: 20%;
     bottom: 0;
@@ -118,6 +122,18 @@ header {
     z-index: 1000;
 }
 
+.linhahorizontal {
+    position: fixed;
+    top: 20%;
+    bottom: 3;
+    
+height: 5px;
+    background-color: black;
+       transform: X(-50%);
+    z-index: 1000;
+}
+
+
 #livrosemana {
     margin-top: 2em;
     display: flex;
@@ -127,11 +143,12 @@ header {
 
 #textolivro {
     color: white;
-    margin-top: -2.2em; /*distancia do texto da parte de cima da box*/
+    margin-top: -2.2em;
+    /*distancia do texto da parte de cima da box*/
     text-align: center;
 }
 
-#fundo { 
+#fundo {
     border-radius: 15%;
     justify-content: center;
     align-items: center;
@@ -140,34 +157,16 @@ header {
     height: 5em;
 }
 
-/*RODAPé*/
-
-.infofooter {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 5px;
-
+main {
+    margin-left: 6em;
 }
 
-#logo {
-    /* logo do if no footer */
-
-    position: relative;
-    top: 140px;
-    align-items: center;
-    width: 70px;
-    height: auto;
-
-
-}
 
 /* LIVROS */
 section {
     display: flex;
     flex-direction: column;
     justify-items: end;
-
     width: 800px;
     margin: 2em auto;
 }
@@ -197,4 +196,32 @@ section {
 .textocaixa {
     flex: 1;
     min-width: 200px;
+}
+
+/*RODAPé*/
+
+.infofooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+
+}
+#caixa-logoif{
+   position: absolute;
+    display: flex;
+    justify-content: center;
+  flex-direction: column;
+    align-items: center;
+    bottom: 8em;
+
+
+}
+#logo {
+    /* logo do if*/
+    align-items: center;
+   width: 50%;
+    height: auto;
+
+
 }
