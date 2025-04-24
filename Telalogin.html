@@ -1,26 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coordenador</title>
+   <link rel="stylesheet" href="Telalogin.css">
+    <title>Ben Winds!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .welcome {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-input {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .login-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
-
-    <h1>Entrar</h1>
-
-    <div id="Email">
-        <h2>Email</h2>
-        <form action=""></form>
-    </div>
-
-    <div id="Senha">
-        <h2>Senha</h2>
-        <form action=""></form>
-    </div>
-
+    <div class="welcome">Bem vindes!</div>
+    
+    <form class="login-form">
+        <input type="text" class="login-input" placeholder="entra">
+        <button type="submit" class="login-button">Enterar</button>
+    </form>
 </body>
-
 </html>

@@ -20,6 +20,8 @@ body {
     width: 15%;
     z-index: 9999;
     height: 100%;
+    flex-direction: column;
+    align-items: center;
     background-color: #ffdeb2;
 }
 
@@ -31,7 +33,12 @@ margin-top: -4em;
     background: none;
     cursor: pointer;
     justify-content: center;
-    align-items: center;
+    transition: transform 0.3s ease, filter 0.2s ease;
+}
+
+#menu-toggle:hover{
+transform: scale(1.2);
+filter: brightness(0.7);
 }
 
 .menu {
@@ -53,7 +60,23 @@ margin-top: -4em;
     margin-bottom: 5px;
 }
 
+#botao-livro img{ /*botao de livro no menu */
+display: block;
+text-align: center;
+position: relative;
+left: 20px;
+justify-content: center;
+align-items: center;
+width: 100px;
+height: auto;
+border-radius: 5px;
+transition: transform 0.3s;
 
+}
+
+#botao-livro img:hover{
+    transform: scale(1.05);
+}
 
 /* CABEÇALHO */
 header {
