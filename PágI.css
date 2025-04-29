@@ -244,18 +244,18 @@ section {
 /*RODAPé*/
 
 footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-
-
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 .infofooter {
-    position: relative;
-    bottom: -30px;
+display: flex;
+justify-content: end;
+flex-direction: row;
+margin-bottom: -40px;
 }
+
 
 #caixa-logoif {
     position: absolute;
