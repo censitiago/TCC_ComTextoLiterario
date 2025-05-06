@@ -12,17 +12,21 @@
 <body>
 
     <div class="menu-container">
-        <button id="menu-toggle" onclick="toggleMenu()">
+        <button id="menu-toggle">
             <img src="imgpaginicial/menu-icon.png" alt="">
         </button>
-        <nav id="menu" class="menu">
-            <a href="#">Coordenador</a>
-            <a href="#">Bolsista</a>
+        <div id="menu-opcoes" class="menu-oculto" style="display: none;">
+            <a href="Telalogin.html">Login</a>
             <a href="#">ComTexto</a>
+        </div>
+
+        <nav id="menu" class="menu">
+
         </nav>
 
         <a id="botao-livro" href="#"><img src="imgpaginicial/livro.png" alt=""></a>
-        <a id="botao-calendario" href="Telacalendario.html"><img src="imgpaginicial/calendario-removebg-preview.png" alt=""></a>
+        <a id="botao-calendario" href="Telacalendario.html"><img src="imgpaginicial/calendario-removebg-preview.png"
+                alt=""></a>
         <div id="caixa-logoif">
             <img id="logo" src="imgpaginicial/Logo_IFC_vertical_Ibirama.png" alt="">
         </div>
@@ -39,11 +43,15 @@
     <div class="linhahorizontal"></div>
     <div class="linhavertical"></div>
     <main>
+        <div class="topicos">
+        <button id="btn-cadastrar-livro" style="display:none;"><img id="imglivroadd" src="imgpaginicial/addasimverde.png" alt=""></button>
         <div id="livrosemana">
             <div id="fundo">
                 <h2 id="textolivro">Livros da semana</h2>
             </div>
         </div>
+    <button id="btn-cadastrar-bolsista" style="display: none;"></button>
+    </div>
         <section>
             <article class="livro">
                 <h2>Teste</h2>
@@ -58,16 +66,16 @@
         </section>
     </main>
 
-   
+
     <footer>
         <div class="infofooter">
-        <h2 >IFC - Campus Ibirama</h2> &nbsp;  &nbsp;
-         <h4> ComTextoLiterário@gmail.com</h4>
+            <h2>IFC - Campus Ibirama</h2> &nbsp; &nbsp;
+            <h4> ComTextoLiterário@gmail.com</h4>
         </div>
         <h6>Todos os direitos reservados ComTexto Literário</h6>
     </footer>
 
-    <script src="menu.js" defer></script>
+    <script src="PágI.js" defer></script>
 </body>
 
 </html>

@@ -48,11 +48,12 @@
 <body>
     <div class="welcome">Bem Vindos!</div>
     
-    <form class="login-form">
-        <input type="text" class="login-input" placeholder="login">
-        <input type="text" class="login-input" placeholder="senha"> 
-               <button type="submit" class="login-button">Entrar</button>
+    <form class="login-form" onsubmit="login(event)">
+        <input type="text" id="email" class="login-input" placeholder="E-mail">
+        <input type="text" id="senha" class="login-input" placeholder="Senha"> 
+        <button type="submit" class="login-button">Entrar</button>
 
     </form>
+    <script src="Telalogin.js"></script>
 </body>
 </html>
