@@ -39,21 +39,28 @@
             <h1 class="TituloP">ComTexto Literário</h1>
             <h2 id="subtitulo">Descolonizando Leituras</h2>
         </div>
-        <a class="logout-link" href="#" onclick="logout()" style="display:none;">Sair</a>
+        <a id="logout" class="logout-link" href="#" onclick="logout()" style="display:none;">Sair</a>
     </header>
 
     <div class="linhahorizontal"></div>
     <div class="linhavertical"></div>
     <main>
         <div class="topicos">
-        <button id="btn-cadastrar-livro"><img id="imglivroadd" src="imgpaginicial/addasimverde.png" alt=""></button>
-        <div id="livrosemana">
-            <div id="fundo">
-                <h2 id="textolivro">Livros da semana</h2>
+            <div id="container-cad-livro" style="display: none;"> 
+                <button id="btn-cadastrar-livro">
+                    <img id="imglivroadd" src="imgpaginicial/107256-removebg-preview.png" alt="">
+                </button>
+                <p id="texto-cad-livro">Adicionar Livro</p>
             </div>
+            
+            <div id="livrosemana">
+                <div id="fundo">
+                    <h2 id="textolivro">Livros da semana</h2>
+                </div>
+            </div>
+        
+            <button id="btn-cadastrar-bolsista" style="display: none;">Cadastrar Bolsista</button>
         </div>
-    <button id="btn-cadastrar-bolsista" style="display: none;"></button>
-    </div>
         <section>
             <article class="livro">
                 <h2>Teste</h2>

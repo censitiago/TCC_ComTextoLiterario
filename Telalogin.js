@@ -8,8 +8,11 @@ function login(event){
     let tipo = "";
     if(email === "coordenador@gmail.com" && senha === "1234"){
         tipo = "coordenador";
+        localStorage.setItem("usuarioLogado","coordenador");
+
     } else if (email === "bolsista@gmail.com" && senha === "1234"){
         tipo = "bolsista";
+        localStorage.setItem("usuarioLogado", "bolsista");
     } else{
         alert("Login Inválido");
         return;
