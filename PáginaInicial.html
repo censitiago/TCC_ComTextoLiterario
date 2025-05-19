@@ -9,6 +9,22 @@
     <title>ComTexto Literário</title>
 </head>
 
+<!-- Modal de Cadastro de Livro (hidden por padrão) -->
+<div id="modal-livro" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Cadastrar Novo Livro</h2>
+        <form id="form-livro">
+            <input type="text" id="titulo" placeholder="Título" required>
+            <input type="text" id="autor" placeholder="Autor" required>
+            <input type="text" id="genero" placeholder="Gênero">
+            <textarea id="resumo" placeholder="Resumo"></textarea>
+             <input type="text" id="imagem" placeholder="URL da Imagem (Capa)">
+            <input type="text" id="pdf" placeholder="Link do PDF (opcional)">
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</div>
 <body>
 
     <div class="menu-container">
@@ -47,7 +63,9 @@
     <main>
         <div class="topicos">
             <div id="container-cad-livro" style="display: none;"> 
-                <button id="btn-cadastrar-livro">
+
+                <button
+                itemid="toggle" id="btn-cadastrar-livro">
                     <img id="imglivroadd" src="imgpaginicial/107256-removebg-preview.png" alt="">
                 </button>
                 <p id="texto-cad-livro">Adicionar Livro</p>
@@ -83,7 +101,7 @@
         </div>
         <h6>Todos os direitos reservados ComTexto Literário</h6>
     </footer>
-
+<script src ="Livro.js"></script>
     <script src="PágI.js" defer></script>
 </body>
 
