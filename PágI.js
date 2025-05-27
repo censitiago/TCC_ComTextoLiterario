@@ -35,6 +35,7 @@ function logout() {
     window.location.href = 'PáginaInicial.html';
 }
 
+
 //cadastro de livro
 const modalLivro = document.getElementById('modal-livro');
 const btnCadastrarLivro = document.getElementById('btn-cadastrar-livro');
@@ -59,6 +60,7 @@ window.addEventListener('click', (e) => {
 
     
 });
+
 
 document.getElementById('form-livro').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -86,12 +88,12 @@ document.getElementById('form-livro').addEventListener('submit', (e) => {
 function atualizarLivrosDaSemana() {
     const livros = JSON.parse(localStorage.getItem('livros')) || [];
     const livrosOrdenados = livros.sort((a, b) => new Date(b.dataCadastro) - new Date(a.dataCadastro));
-    const secaoLivros = document.querySelector('section'); // 👈 Seleciona a <section> do HTML
+    const secaoLivros = document.querySelector('section'); //Seleciona a <section> do HTML
 
     // Limpa os livros de "Teste" e adiciona os cadastrados
     secaoLivros.innerHTML = ''; // Remove tudo dentro da <section>
 
-    // Adiciona cada livro (máximo 2, como você queria)
+    // Adiciona cada livro (máximo 2)
     livrosOrdenados.slice(0, 2).forEach(livro => {
         secaoLivros.innerHTML += `
             <article class="livro">
@@ -107,6 +109,6 @@ function atualizarLivrosDaSemana() {
 
 // Carrega os livros quando a página abre
 document.addEventListener('DOMContentLoaded', () => {
-    atualizarLivrosDaSemana(); // 👈 Isso preenche a seção com livros reais
+    atualizarLivrosDaSemana(); //Isso preenche a seção com livros reais
     // ... (seu código existente de login, etc.)
 });

@@ -19,12 +19,15 @@
             <input type="text" id="autor" placeholder="Autor" name="autor" required>
             <input type="text" id="genero" placeholder="Gênero" name="genero">
             <textarea id="resumo" placeholder="Resumo" name="resumo"> </textarea>
-             <input type="text" id="imagem" placeholder="URL da Imagem (Capa)" name="imagem">
+            <input type="text" id="imagem" placeholder="URL da Imagem (Capa)" name="imagem">
             <input type="text" id="pdf" placeholder="Link do PDF (opcional)" name="pdf">
             <button type="submit">Salvar</button>
         </form>
     </div>
 </div>
+
+
+
 <body>
 
     <div class="menu-container">
@@ -62,23 +65,34 @@
     <div class="linhavertical"></div>
     <main>
         <div class="topicos">
-            <div id="container-cad-livro" style="display: none;"> 
+            <div id="container-cad-livro" style="display: none;">
 
-                <button
-                itemid="toggle" id="btn-cadastrar-livro">
+                <button itemid="toggle" id="btn-cadastrar-livro">
                     <img id="imglivroadd" src="imgpaginicial/107256-removebg-preview.png" alt="">
                 </button>
                 <p id="texto-cad-livro">Adicionar Livro</p>
             </div>
-            
+
             <div id="livrosemana">
                 <div id="fundo">
                     <h2 id="textolivro">Livros da semana</h2>
                 </div>
             </div>
-        
-            <button id="btn-cadastrar-bolsista" style="display: none;">Cadastrar Bolsista</button>
+
+            <button itemid="toggle" id="btn-cadastrar-bolsista" style="display: none;">Cadastrar Bolsista</button>
         </div>
+
+<!-- Modal de Cadastro de bolsita teste  -->
+<div id="modal-bolsista">
+    <div class="modal-content">
+        <h2>Cadastrar Bolsista</h2>
+        <form id="form-bolsista" method="post" action="cadastrar.php">
+            <input type="text" id="nome" name="nome">
+            <input type="text" id="email" name="email">
+
+        <input type="submit">       </form>
+    </div>
+</div>
         <section>
             <article class="livro">
                 <h2>Teste</h2>
@@ -101,7 +115,7 @@
         </div>
         <h6>Todos os direitos reservados ComTexto Literário</h6>
     </footer>
-<script src ="Livro.js"></script>
+    <script src="Livro.js"></script>
     <script src="PágI.js" defer></script>
 </body>
 

@@ -12,6 +12,12 @@ body {
     font-family: sans-serif;
 }
 
+#modal-bolsista{
+    margin-left: 300px;
+}
+
+
+
 #livrosemana {
     display: flex;
     justify-content: center;
