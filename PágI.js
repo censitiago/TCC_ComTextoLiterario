@@ -61,7 +61,7 @@ window.addEventListener('click', (e) => {
     
 });
 
-
+/*
 document.getElementById('form-livro').addEventListener('submit', (e) => {
     e.preventDefault();
     
@@ -112,3 +112,4 @@ document.addEventListener('DOMContentLoaded', () => {
     atualizarLivrosDaSemana(); //Isso preenche a seção com livros reais
     // ... (seu código existente de login, etc.)
 });
+*/
