@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (tipo === "coordenador") {
             document.getElementById("btn-cadastrar-bolsista").style.display = "block";
+            document.getElementById("container-cad-bolsista").style.display = "block";
+            
         }
 
 
