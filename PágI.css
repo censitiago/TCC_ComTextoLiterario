@@ -74,11 +74,7 @@ body {
 /* Efeito HOVER (passar o mouse) */
 #btn-cadastrar-livro:hover img {
     transform: scale(1.1); /* Aumenta 10% */
-    filter: 
-        brightness(0.9) /* Escurece levemente */
-        sepia(1)        /* Tons amarelados */
-        hue-rotate(60deg) /* Transforma em verde */
-        saturate(1.5);   /* Aumenta a saturação */
+
 }
 
 /* Efeito CLICK (ativo) */
@@ -121,6 +117,17 @@ body {
      transition: all 0.6s ease; /* Suaviza a animação */
 }
 
+/* Efeito HOVER (passar o mouse) */
+#btn-cadastrar-bolsista:hover img {
+    transform: scale(1.1); /* Aumenta 10% */
+
+}
+
+/* Efeito CLICK (ativo) */
+#btn-cadastrar-bolsista:active img {
+    transform: scale(0.95); /* Encolhe 5% ao clicar */
+}
+
 #btn-cadastrar-bolsista img{
     display: flex;
     align-items: center;
@@ -129,6 +136,7 @@ body {
     height: 100%;
     object-fit: contain;
     margin-top: -40%;
+    transition: all 0.3s ease; /* Animação suave */
 }
 
 #texto-cad-livro {
@@ -139,6 +147,16 @@ body {
     height: 50px;
     white-space: nowrap;
   
+}
+
+#texto-cad-bolsista{
+    display: flex;
+    margin-left: 75px;
+    justify-content: center;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    white-space: nowrap;
 }
 
 /* Estilos do Modal */
