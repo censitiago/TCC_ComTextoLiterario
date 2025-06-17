@@ -221,15 +221,6 @@ body {
     cursor: pointer;
 }
 
-/* No PágI.css */
-.livro {
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    max-width: 700px; /*tamanho caixa livro*/
-}
 
 .capa-livro {
     width: 50%;
@@ -325,6 +316,25 @@ body {
     transform: scale(1.05);
 }
 
+#logout{
+    width: 70px;
+    margin-right: 2%;
+    margin-top: -5%;
+    
+}
+
+#logout img{
+    width: 100%;
+    margin-right: 5%;
+      transition: transform 0.1s;
+    
+}
+
+#logout img:hover{
+        filter: brightness(0.7);
+   transform: scale(1.05);
+    
+}
 
 /* CABEÇALHO */
 header {
@@ -422,14 +432,17 @@ section {
 
 
 .livro {
-    /*Imagem dos livros */
+    /*Imagem dos livros */   
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 80%; /*tamanho caixa livro*/
     font-size: large;
     width: 90%;
     gap: 5em;
     height: auto;
     padding: 1em;
     border: 5px solid black;
-    margin-left: 5em;
+    margin-left: 3.5em;
     margin-right: 2em;
     margin-bottom: 2em;
     background-color: rgb(245, 240, 167);

@@ -70,8 +70,8 @@ header {
 
 #livrosemana {
     display: flex;
-    justify-content: center;
     margin-top: 100px;
+    margin-left: 5%;
 
 }
 
@@ -92,6 +92,13 @@ header {
 }
 
 #plano-fundo{
-    width: 50%;
-    background-color: brown;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 90%;
+    height: 700px;
+background-color: rgb(245, 240, 167);
+   border-radius: 10px;
+  padding: 1em;
+      gap: 5em;
+    border: 5px solid black;
 }
