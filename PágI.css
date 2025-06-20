@@ -12,7 +12,7 @@ body {
     font-family: sans-serif;
 }
 
-#modal-bolsista{
+#modal-bolsista {
     margin-left: 300px;
 }
 
@@ -32,6 +32,7 @@ body {
 }
 
 #fundo {
+    margin-top: 1em;
     border-radius: 15%;
     justify-content: center;
     align-items: center;
@@ -60,7 +61,7 @@ body {
     margin-top: 50px;
     margin-right: 40px;
     margin-left: 50px;
-    border: none; 
+    border: none;
     background: none;
     padding: 0;
     cursor: pointer;
@@ -68,25 +69,29 @@ body {
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-     transition: all 0.6s ease; /* Suaviza a animação */
+    transition: all 0.6s ease;
+    /* Suaviza a animação */
 }
 
 /* Efeito HOVER (passar o mouse) */
 #btn-cadastrar-livro:hover img {
-    transform: scale(1.1); /* Aumenta 10% */
+    transform: scale(1.1);
+    /* Aumenta 10% */
 
 }
 
 /* Efeito CLICK (ativo) */
 #btn-cadastrar-livro:active img {
-    transform: scale(0.95); /* Encolhe 5% ao clicar */
+    transform: scale(0.95);
+    /* Encolhe 5% ao clicar */
 }
 
 /* Estilo da imagem dentro do botão */
 #btn-cadastrar-livro img {
     width: 100%;
     height: auto;
-    transition: all 0.3s ease; /* Animação suave */
+    transition: all 0.3s ease;
+    /* Animação suave */
 }
 
 #btn-cadastrar-livro img {
@@ -106,7 +111,7 @@ body {
     margin-top: 50px;
     margin-right: 40px;
     margin-left: 50px;
-    border: none; 
+    border: none;
     background: none;
     padding: 0;
     cursor: pointer;
@@ -114,21 +119,24 @@ body {
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-     transition: all 0.6s ease; /* Suaviza a animação */
+    transition: all 0.6s ease;
+    /* Suaviza a animação */
 }
 
 /* Efeito HOVER (passar o mouse) */
 #btn-cadastrar-bolsista:hover img {
-    transform: scale(1.1); /* Aumenta 10% */
+    transform: scale(1.1);
+    /* Aumenta 10% */
 
 }
 
 /* Efeito CLICK (ativo) */
 #btn-cadastrar-bolsista:active img {
-    transform: scale(0.95); /* Encolhe 5% ao clicar */
+    transform: scale(0.95);
+    /* Encolhe 5% ao clicar */
 }
 
-#btn-cadastrar-bolsista img{
+#btn-cadastrar-bolsista img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +144,8 @@ body {
     height: 100%;
     object-fit: contain;
     margin-top: -40%;
-    transition: all 0.3s ease; /* Animação suave */
+    transition: all 0.3s ease;
+    /* Animação suave */
 }
 
 #texto-cad-livro {
@@ -146,10 +155,10 @@ body {
     width: 50px;
     height: 50px;
     white-space: nowrap;
-  
+
 }
 
-#texto-cad-bolsista{
+#texto-cad-bolsista {
     display: flex;
     margin-left: 75px;
     justify-content: center;
@@ -189,17 +198,20 @@ body {
 }
 
 /* Quando o modal estiver aberto */
-.modal[style*="display: flex"] ~ .menu-container {
-    opacity: 0.1; /* Escurece o menu */
+.modal[style*="display: flex"]~.menu-container {
+    opacity: 0.1;
+    /* Escurece o menu */
     transition: opacity 0s ease;
 }
 
 /* Escurece o fundo do modal */
 .modal {
-    background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo escuro semi-transparente */
 }
 
-#form-livro input, #form-livro textarea {
+#form-livro input,
+#form-livro textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -268,17 +280,45 @@ body {
     transition: transform 0.3s ease, filter 0.2s ease;
 }
 
+#entrarconta {
+    display: flex;
+    align-items: first baseline;
+    margin-top: -70px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-style: normal;
+    text-decoration: none;
+    font-size: medium;
+    color: rgb(100, 151, 58);
+     transition: transform 0.3s ease, filter 0.2s ease;
+}
+
+#entrarconta h3 {
+    text-align: center;
+    margin-left: -10px;
+
+}
+
+#entrarconta:hover {
+      transform: scale(1.02);
+    filter: brightness(0.7);
+}
+
 #menu-toggle:hover {
     transform: scale(1.05);
     filter: brightness(0.7);
 }
 
-.menu a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 5px;
+#entrarconta img {
+    width: 45px;
+    height: 90px;
+   
 }
+
+#menu-opcoes a img {
+    margin-top: -50%;
+}
+
 
 #botao-livro img {
     /*botao de livro no menu */
@@ -316,24 +356,24 @@ body {
     transform: scale(1.05);
 }
 
-#logout{
+#logout {
     width: 70px;
     margin-right: 2%;
     margin-top: -5%;
-    
+
 }
 
-#logout img{
+#logout img {
     width: 100%;
     margin-right: 5%;
-      transition: transform 0.1s;
-    
+    transition: transform 0.1s;
+
 }
 
-#logout img:hover{
-        filter: brightness(0.7);
-   transform: scale(1.05);
-    
+#logout img:hover {
+    filter: brightness(0.7);
+    transform: scale(1.05);
+
 }
 
 /* CABEÇALHO */
@@ -432,10 +472,11 @@ section {
 
 
 .livro {
-    /*Imagem dos livros */   
+    /*Imagem dos livros */
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    max-width: 80%; /*tamanho caixa livro*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    /*tamanho caixa livro*/
     font-size: large;
     width: 90%;
     gap: 5em;
@@ -489,7 +530,7 @@ footer {
 #logo {
     /* logo do if*/
     align-items: center;
-    width: 50%;
+    width: 30%;
     height: auto;
 
 

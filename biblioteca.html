@@ -17,7 +17,7 @@
         <a id="logout" class="logout-link" href="#" onclick="logout()" style="display:none;">Sair</a>
     </header>
 
-    <div id="livrosemana">
+    <div id="livroacervo">
         <div id="fundo">
             <h2 id="textolivro">Acervo de Livros</h2>
             
@@ -26,8 +26,22 @@
 
     <div id="plano-fundo">
 <div>
-   
-</div>
+  <!-- Container dos livros -->
+        <div class="livro-container" id="livrosContainer">
+            <!-- Template (modelo invisível) -->
+            <div class="livro-card template" style="display: none;">
+                <img class="livro-capa" src="" alt="Capa do livro">
+                <h3 class="livro-titulo"></h3>
+                <span class="livro-autor"></span>
+                <a href="#" class="btn-pdf" target="_blank">Acessar PDF</a>
+            </div>
+            
+            <!-- Mensagem de carregamento -->
+            <div id="carregando">
+                <p>Carregando acervo...</p>
+            </div>
+        </div>
+        </div>
     </div>
 
 
