@@ -290,7 +290,7 @@ body {
     text-decoration: none;
     font-size: medium;
     color: rgb(100, 151, 58);
-     transition: transform 0.3s ease, filter 0.2s ease;
+     transition: transform 0.5s ease, filter 0.2s ease;
 }
 
 #entrarconta h3 {

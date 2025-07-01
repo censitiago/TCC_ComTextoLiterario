@@ -19,13 +19,13 @@
     <div class="modal-content">
         <span class="close-modal">&times;</span>
         <h2>Cadastrar Novo Livro</h2>
-        <form id="form-livro" method="post" action="cadastrar.php">
+        <form id="form-livro" method="post" action="livro.php">
             <input type="text" id="titulo" placeholder="Título" name="titulo" required>
             <input type="text" id="autor" placeholder="Autor" name="autor" required>
-            <input type="text" id="genero" placeholder="Gênero" name="genero">
-            <textarea id="resumo" placeholder="Resumo" name="resumo"> </textarea>
-            <input type="text" id="imagem" placeholder="URL da Imagem (Capa)" name="imagem">
-            <input type="text" id="pdf" placeholder="Link do PDF (opcional)" name="pdf">
+            <input type="text" id="genero" placeholder="Gênero" name="genero" required>
+            <textarea id="resumo" placeholder="Resumo" name="resumo" required> </textarea>
+            <input type="text" id="imagem" placeholder="URL da Imagem (Capa)" name="imagem" required>
+            <input type="text" id="pdf" placeholder="Link do PDF (opcional)" name="pdf" required>
             <button type="submit">Salvar</button>
         </form>
     </div>
