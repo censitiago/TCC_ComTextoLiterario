@@ -31,5 +31,7 @@ CREATE TABLE livros (
     id_coordenador INT,
     FOREIGN KEY (id_bolsista) REFERENCES bolsistas(idbolsista),
     FOREIGN KEY (id_coordenador) REFERENCES coordenadores(idcoordenador)
-);
 
+    
+);
+insert into coordenadores (nome, email, senha) values ('teste','teste@gmail.com','1234') 

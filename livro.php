@@ -1,6 +1,4 @@
 <?php 
-
-
 //Hablita os erros do PHP 
 //QUando aparece erro 500 ele não mostra os erros por segurança
 ini_set('display_errors', '1');

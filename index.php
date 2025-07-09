@@ -14,11 +14,28 @@
 
 
 <body>
+
+<?php
+session_start();
+
+// Verifica se está logado
+if (!isset($_SESSION['coordenador'])) {
+    header("Location: index.php");
+    exit;
+}
+?>
+
+<?php
+value
+ <input type="text" >
+
+?>
+
 <!-- Modal de Cadastro Livro (hidden por padrão) -->
 <div id="modal-livro" class="modal" style="display: none;">
     <div class="modal-content">
         <span class="close-modal">&times;</span>
-        <h2>Cadastrar Novo Livro</h2>
+        <h2>Cadastrar Livro</h2>
         <form id="form-livro" method="post" action="livro.php">
             <input type="text" id="titulo" placeholder="Título" name="titulo" required>
             <input type="text" id="autor" placeholder="Autor" name="autor" required>
@@ -34,10 +51,12 @@
 <!-- Menu de Bolsita--> 
 <div id="modal-bolsista" class="modal" style="display: none;">
 <div class="modal-content">
+    <span class="close-modalB">&times;</span>
+    <h2>Cadastrar Bolsista</h2>
 <form id="form-bolsista" method="post" action="bolsista.php">
-    <input type="text" id="nome" name="nome">
-     <input type="text" id="email" name="email">
-     <input type="text" id="senha" name="senha">
+    <input type="text" id="nome"  placeholder="Nome" name="nome">
+     <input type="text" id="email" placeholder="Email" name="email">
+     <input type="password" id="senha" placeholder="Senha" name="senha">
     <button type="submit">Salvar</button>
 </form>
 </div>

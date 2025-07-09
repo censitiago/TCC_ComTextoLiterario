@@ -11,8 +11,10 @@ toggleButton.addEventListener('click', () => {
     }
 });
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
-    const tipo = localStorage.getItem("tipoUsuario");
+    const tipo = localStorage.getItem("$_SESSION['coordenador']");
 
 
     if (tipo) {
@@ -58,6 +60,31 @@ closeModal.addEventListener('click', () => {
 window.addEventListener('click', (e) => {
     if (e.target === modalLivro) {
         modalLivro.style.display = 'none';
+    }
+
+    
+});
+
+//cadastro de bolsista
+const modalBolsista = document.getElementById('modal-bolsista');
+const btnCadastrarBolsista = document.getElementById('btn-cadastrar-bolsista');
+const closeModalB = document.querySelector('.close-modalB');
+
+//abre modal ao clicar no botao "addlivro"
+btnCadastrarBolsista.addEventListener('click', () => {
+    modalBolsista.style.display = 'flex';
+   
+});
+
+// Fecha o modal ao clicar no "X"
+closeModalB.addEventListener('click', () => {
+    modalBolsista.style.display = 'none';
+}); 
+
+// Fecha o modal ao clicar fora dele
+window.addEventListener('click', (e) => {
+    if (e.target === modalBolsista) {
+        modalBolsista.style.display = 'none';
     }
 
     
