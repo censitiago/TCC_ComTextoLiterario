@@ -37,6 +37,7 @@ if (!isset($_SESSION['coordenador'])) {
                 echo "<tr>"                          
                         . "<td hidden>".$row["idlivros"]."</td>"
                         . "<td>".$row["titulo"]."</td>"
+                           . "<td>".$row["autor"]."</td>"
                          . "<td>".$row["genero"]."</td>"
                           . "<td>".$row["resumo"]."</td>"
                            . "<td>".$row["imagem"]."</td>"

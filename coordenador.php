@@ -18,9 +18,10 @@ if ($conn->connect_error)
 
 $email = $_POST['email'];
 $senha = $_POST['senha'];
+$tipo = "coordenador";
 
 // Busca usuário pelo email
-$res = $conn->query("SELECT * FROM coordenadores WHERE email='$email'");
+$res = $conn->query("SELECT * FROM coordenadores WHERE email='$email' and senha='$senha'");
 
 if ($res->num_rows > 0) {
   /*usar session*/  $_SESSION['coordenador'] = $res->fetch_assoc();
