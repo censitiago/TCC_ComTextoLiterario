@@ -26,9 +26,27 @@ if (!isset($_SESSION['coordenador'])) {
 ?>
 
 <?php
-value
- <input type="text" >
+     function Recuperar(){
+            $connection = require("conexao.php");
+            $sql = "SELECT idlivros, titulo, autor, genero, resumo, imagem, pdf  FROM livros";
 
+            $result = $mysqli->query($sql);
+            echo "<table>";
+            while ($row = $result->fetch_assoc()) {           
+                echo "<div>"; 
+                echo "<tr>"                          
+                        . "<td hidden>".$row["idlivros"]."</td>"
+                        . "<td>".$row["titulo"]."</td>"
+                         . "<td>".$row["genero"]."</td>"
+                          . "<td>".$row["resumo"]."</td>"
+                           . "<td>".$row["imagem"]."</td>"
+                            . "<td>".$row["pdf"]."</td>"
+                    ."</tr>";
+        
+                echo "</div>";
+            }
+            echo "</table>";
+        }
 ?>
 
 <!-- Modal de Cadastro Livro (hidden por padrão) -->
@@ -144,6 +162,8 @@ value
     </footer>
     <script src="Livro.js"></script>
     <script src="PágI.js" defer></script>
+
+    Recuperar();
 </body>
 
 </html>

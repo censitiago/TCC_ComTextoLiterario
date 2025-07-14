@@ -3,14 +3,14 @@ CREATE DATABASE banco;
 USE banco;
 
 CREATE TABLE coordenadores (
-    idcoordenador INT AUTO_INCREMENT PRIMARY KEY,
+    idcoordenadores INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100)  UNIQUE NOT NULL,
     senha VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE bolsistas (
-    idbolsista INT AUTO_INCREMENT PRIMARY KEY,
+    idbolsistas INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100)  UNIQUE NOT NULL,
     senha VARCHAR(100) NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE bolsistas (
 );
 
 CREATE TABLE livros (
-    idlivro INT AUTO_INCREMENT PRIMARY KEY,
+    idlivros INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(100),
     autor VARCHAR(100),
     genero VARCHAR(100),
