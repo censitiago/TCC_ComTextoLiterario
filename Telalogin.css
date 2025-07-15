@@ -38,6 +38,7 @@ header{
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+     text-align: center;
 }
 
 .login-form {
@@ -90,4 +91,19 @@ header{
 
 .login-button:active {
     transform: translateY(1px);
+}
+
+h4{
+    text-align: center;
+}
+
+
+#senha{
+  text-align: center;
+}
+#email{
+      text-align: center;
+}
+#botaoo{
+      text-align: center;
 }

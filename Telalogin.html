@@ -53,12 +53,10 @@
     <div class="welcome"><h2>Bem Vindos!</h2>
     <h4>Entre como Coordenador</h4>
 
-     onsubmit="login(event)"
-
-    <form method="post" action="login.php" class="login-form" >
+    <form id="formu" method="post" action="login.php" class="login-form" onsubmit="login(event)"  >
         <input type="text" id="email" class="login-input" placeholder="E-mail" name="email">
         <input type="password" id="senha" class="login-input" placeholder="Senha" name="senha"> 
-        <button type="submit" class="login-button">Entrar</button>
+        <button id="botaoo" type="submit" class="login-button">Entrar</button>
 
     </form>
     <script src="Telalogin.js"></script>
